@@ -31,28 +31,44 @@
 				$b = $_POST['b'];
 				$c = $_POST['c'];
 
-				$delta = pow($b, 2) -4 * $a * $c;
-
 				if($a == null || $b == null || $c == null){
 					echo "Dados não informados.";
-				}else {
+				} else{
+					$delta = pow($b, 2) -4 * $a * $c;
+
 					if($delta < 0){
 						echo "Delta é negativo. Não há resultado.";
-					}else {
+					} else{
 						if($delta == 0){
 							$x = (-1 * $b) / (2 * $a);
 							echo "O valor de Delta é 0.<br> O valor de X é ";
-							echo number_format($x, '2', ',', '.');
-						}else {
+							if(is_int($x) == true){
+								echo number_format($x, '0', '', '.');
+							} else{
+								echo number_format($x, '2', ',', '.');
+							}
+						} else{
 							$x1 = ((-1 * $b) + sqrt($delta)) / (2 * $a);
 							$x2 = ((-1 * $b) - sqrt($delta)) / (2 * $a);
 							echo "O valor de Delta é ";
-							echo number_format($delta, '2', ',', '');
+							if(is_int($delta) == true){
+								echo number_format($delta, '0', '', '.');
+							} else{
+								echo number_format($delta, '2', ',', '.');
+							}
 							echo ".<br> O valor de X1 é ";
-							echo number_format($x1, '2', ',', '');
+							if(is_int($x1) == true){
+								echo number_format($x1, '0', '', '.');
+							} else{
+								echo number_format($x1, '2', ',', '.');
+							}
 							echo ".<br> O valor de X2 é ";
-							echo number_format($x2, '2', ',', '');
-							echo ".";
+							if(is_int($x2) == true){
+								echo number_format($x2, '0', '', '.');
+							} else{
+								echo number_format($x2, '2', ',', '.');
+							}
+								echo ".";
 						}
 					}
 				}
