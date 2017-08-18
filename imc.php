@@ -36,6 +36,7 @@
 						echo number_format($imc, '0', '', '.');
 					} else{
 						echo number_format($imc, '2', ',', '.');
+					}
 					echo ".<br>";
 
 					if($imc < 15){
