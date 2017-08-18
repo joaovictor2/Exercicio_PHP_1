@@ -32,7 +32,10 @@
 					$imc = $peso / ($altura * $altura);
 
 					echo "Seu IMC é ";
-					echo number_format($imc, 2, ',', '.');
+					if(is_int($imc) == true){
+						echo number_format($imc, '0', '', '.');
+					} else{
+						echo number_format($imc, '2', ',', '.');
 					echo ".<br>";
 
 					if($imc < 15){
