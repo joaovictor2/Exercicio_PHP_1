@@ -11,7 +11,7 @@
 			<form action="imc.php" method="post">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Seu peso:</label>
-					<input type="number" name="peso" class="form-control" id="formGroupExampleInput" placeholder="Em kilogramas (kg)">
+					<input type="text" name="peso" class="form-control" id="formGroupExampleInput" placeholder="Em kilogramas (kg)">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Sua altura:</label>

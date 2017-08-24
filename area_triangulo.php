@@ -11,15 +11,15 @@
 			<form action="area_triangulo.php" method="post">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Tamanho do lado A:</label>
-					<input type="number" name="a" class="form-control" id="formGroupExampleInput">
+					<input type="text" name="a" class="form-control" id="formGroupExampleInput">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Tamanho do lado B:</label>
-					<input type="number" name="b" class="form-control" id="formGroupExampleInput">
+					<input type="text" name="b" class="form-control" id="formGroupExampleInput">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail1">Tamanho do lado C:</label>
-					<input type="number" name="c" class="form-control" id="formGroupExampleInput">
+					<input type="text" name="c" class="form-control" id="formGroupExampleInput">
 				</div>
 					<button type="submit" class="btn btn-primary">Enviar</button>
 					<a class="btn btn-primary" href="index.php" role="button">Voltar ao Menu</a>

@@ -11,7 +11,7 @@
 			<form action="tabuada.php" method="post">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Número:</label>
-					<input type="number" name="numero" class="form-control" id="formGroupExampleInput">
+					<input type="text" name="numero" class="form-control" id="formGroupExampleInput">
 			 	</div>
 				<button type="submit" class="btn btn-primary">Enviar</button>
 				<a class="btn btn-primary" href="index.php" role="button">Voltar ao Menu</a>
